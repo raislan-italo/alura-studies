@@ -12,16 +12,13 @@ function Lista({tarefas} : {tarefas: Array<ITarefa>}) {
             </h2>
 
             { tarefas.map((item, index) => (
-                <div>
-                    <ul>
-                        <Item 
-                            // tarefa = {item.tarefa}
-                            // tempo = {item.tempo}
-                            key = {index}
-                            {...item}
-                        />
-                    </ul>
-                </div>
+                <ul key = {index}>
+                    <Item 
+                        // tarefa = {item.tarefa}
+                        // tempo = {item.tempo}
+                        {...item}
+                    />
+                </ul>
             ))}
 
         </aside>
